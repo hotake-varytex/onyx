@@ -3,7 +3,7 @@
 import { ValidSources } from "@/lib/types";
 import { SourceIcon } from "./SourceIcon";
 import { useState } from "react";
-import { OnyxIcon } from "./icons/icons";
+import { Agent365Icon } from "./icons/agent365Icon";
 
 export function WebResultIcon({
   url,
@@ -23,7 +23,7 @@ export function WebResultIcon({
   return (
     <>
       {hostname == "docs.onyx.app" ? (
-        <OnyxIcon size={size} className="dark:text-[#fff] text-[#000]" />
+        <Agent365Icon size={size} className="dark:text-[#fff] text-[#000]" />
       ) : !error ? (
         <img
           className="my-0 rounded-full py-0"

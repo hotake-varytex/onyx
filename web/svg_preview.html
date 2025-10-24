@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Preview</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .svg-container {
+            display: flex;
+            gap: 30px;
+        }
+        .svg-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .light {
+            color: #000;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .dark {
+            color: #fff;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SVG Preview</h1>
+        <div class="svg-container">
+            <div class="svg-wrapper">
+                <div class="light">
+                    <svg
+                        style="width: 100px; height: 100px;"
+                        class="w-[100px] h-[100px]"
+                        viewBox="0 0 56 56"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M27.9998 0L10.8691 7.76944L27.9998 15.5389L45.1305 7.76944L27.9998 0ZM27.9998 40.4611L10.8691 48.2306L27.9998 56L45.1305 48.2306L27.9998 40.4611ZM48.2309 10.8691L56.0001 28.0003L48.2309 45.1314L40.4617 28.0003L48.2309 10.8691ZM15.5385 28.0001L7.76923 10.869L0 28.0001L7.76923 45.1313L15.5385 28.0001Z"
+                            fill="currentColor"
+                        />
+                    </svg>
+                </div>
+                <h2>Light Mode</h2>
+            </div>
+            <div class="svg-wrapper">
+                <div class="dark">
+                    <svg
+                        style="width: 100px; height: 100px;"
+                        class="w-[100px] h-[100px]"
+                        viewBox="0 0 56 56"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M27.9998 0L10.8691 7.76944L27.9998 15.5389L45.1305 7.76944L27.9998 0ZM27.9998 40.4611L10.8691 48.2306L27.9998 56L45.1305 48.2306L27.9998 40.4611ZM48.2309 10.8691L56.0001 28.0003L48.2309 45.1314L40.4617 28.0003L48.2309 10.8691ZM15.5385 28.0001L7.76923 10.869L0 28.0001L7.76923 45.1313L15.5385 28.0001Z"
+                            fill="currentColor"
+                        />
+                    </svg>
+                </div>
+                <h2>Dark Mode</h2>
+            </div>
+        </div>
+        <div class="svg-container">
+            <div class="svg-wrapper">
+                <div class="light">
+                    <svg
+                        style="width: 200px; height: 200px;"
+                        class="w-[200px] h-[200px]"
+                        viewBox="0 0 56 56"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M27.9998 0L10.8691 7.76944L27.9998 15.5389L45.1305 7.76944L27.9998 0ZM27.9998 40.4611L10.8691 48.2306L27.9998 56L45.1305 48.2306L27.9998 40.4611ZM48.2309 10.8691L56.0001 28.0003L48.2309 45.1314L40.4617 28.0003L48.2309 10.8691ZM15.5385 28.0001L7.76923 10.869L0 28.0001L7.76923 45.1313L15.5385 28.0001Z"
+                            fill="currentColor"
+                        />
+                    </svg>
+                </div>
+                <h2>Large Size</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

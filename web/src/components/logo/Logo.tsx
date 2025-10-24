@@ -2,7 +2,9 @@
 
 import { useContext } from "react";
 import { SettingsContext } from "../settings/SettingsProvider";
-import { OnyxIcon, OnyxLogoTypeIcon } from "../icons/icons";
+import { OnyxLogoTypeIcon } from "../icons/icons";
+import { Agent365Icon } from "../icons/agent365Icon";
+import { Agent365LogoTypeIcon } from "../icons/agent365LogoTypeIcon";
 
 export function Logo({
   height,
@@ -34,7 +36,7 @@ export function Logo({
   ) {
     return (
       <div style={{ height, width }} className={className}>
-        <OnyxIcon
+        <Agent365Icon
           size={height}
           className={`${className} dark:text-[#fff] text-[#000]`}
         />
@@ -63,7 +65,7 @@ export function LogoType({
   size?: "small" | "default" | "large";
 }) {
   return (
-    <OnyxLogoTypeIcon
+    <Agent365LogoTypeIcon
       size={115}
       className={`items-center w-full dark:text-[#fff]`}
     />
